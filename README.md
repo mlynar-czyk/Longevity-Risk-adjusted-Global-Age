@@ -15,8 +15,6 @@ Thanks to @revodavid https://github.com/revodavid/devcontainers-rstudio.git
 
 If you have access to GitHub CodeSpaces, click the green "<> Code" button at the top right on this repository page, and then select "Create codespace on main". (GitHub CodeSpaces is available with [GitHub Enterprise](https://github.com/enterprise) and [GitHub Education](https://education.github.com/).)
 
-Now, browse to the file [explore-analyze-data-with-R/solution/challenge-Data_Exploration.ipynb](explore-analyze-data-with-R/solution/challenge-Data_Exploration.ipynb). Work through the Jupyter Notebook.
-
 To open RStudio Server, click the Forwarded Ports "Radio" icon at the bottom of the VS Code Online window.
 
 ![Forwarded Ports](img/forwarded_ports.png)
@@ -28,6 +26,10 @@ In the Ports tab, click the Open in Browser "World" icon that appears when you h
 This will launch RStudio Server in a new window. Log in with the username and password `rstudio/rstudio`. 
 
 * NOTE: Sometimes, the RStudio window may fail to open with a timeout error. If this happens, try again, or restart the Codepace.
+
+- Open the `Mosh-Book.Rproj` file
+- Run `packrat::init()`
+- Run `packrat::on()`
 
 # Get Original Data
 

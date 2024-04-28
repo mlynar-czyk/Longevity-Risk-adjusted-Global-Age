@@ -9,6 +9,9 @@ Rplots.ps
 packrat/lib*/
 packrat/src/
 
+# Renv
+renv
+
 # Latex
 **.aux
 **.fls

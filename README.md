@@ -27,7 +27,7 @@ This will launch RStudio Server in a new window. Log in with the username and pa
 
 * NOTE: Sometimes, the RStudio window may fail to open with a timeout error. If this happens, try again, or restart the Codepace.
 
-For some unknown reason packrat doesn't work out-of-the-box under the codespace rstudio, you should use renv :
+For some unknown reason packrat doesn't work out-of-the-box under Codespace, you should use renv :
 
 - Open the `Mosh-Book.Rproj` file
 - Run `install.packages("renv")`

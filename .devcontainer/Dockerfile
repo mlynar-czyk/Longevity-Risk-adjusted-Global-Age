@@ -3,6 +3,9 @@
 ARG VARIANT="4"
 FROM ghcr.io/rocker-org/devcontainer/tidyverse:${VARIANT}
 
+RUN sudo apt update \
+    && sudo apt install git-lfs
+
 RUN install2.r --error --skipinstalled -n -1 \
         statip \
         patchwork \

@@ -15,6 +15,10 @@ Thanks to @revodavid https://github.com/revodavid/devcontainers-rstudio.git
 
 If you have access to GitHub CodeSpaces, click the green "<> Code" button at the top right on this repository page, and then select "Create codespace on main". (GitHub CodeSpaces is available with [GitHub Enterprise](https://github.com/enterprise) and [GitHub Education](https://education.github.com/).)
 
+Use a GitHub CodeSpaces machine type suitable for the project:
+
+![Machine Type](img/machine_type.png)
+
 To open RStudio Server, click the Forwarded Ports "Radio" icon at the bottom of the VS Code Online window.
 
 ![Forwarded Ports](img/forwarded_ports.png)
@@ -27,7 +31,7 @@ This will launch RStudio Server in a new window. Log in with the username and pa
 
 * NOTE: Sometimes, the RStudio window may fail to open with a timeout error. If this happens, try again, or restart the Codepace.
 
-For some unknown reason packrat doesn't work out-of-the-box under Codespace, you should use renv :
+For some unknown reason [packrat](https://rstudio.github.io/packrat/) doesn't seem to be working out-of-the-box under Codespace, you should use [renv](https://rstudio.github.io/renv/articles/renv.html) instead :
 
 - Open the `Mosh-Book.Rproj` file
 - Run `install.packages("renv")`

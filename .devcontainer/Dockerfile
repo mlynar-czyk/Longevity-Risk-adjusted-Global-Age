@@ -26,7 +26,7 @@ RUN install2.r --error --skipinstalled -n -1 \
     && rm -rf /tmp/downloaded_packages \
     && R -q -e 'remotes::install_github("https://github.com/dcomtois/summarytools/tree/0-8-9")'\
     && apt-get update -y \
-    && apt-get install -y git-lfs texlive \
+    && apt-get install -y git-lfs \
     && apt-get clean && apt-get autoclean && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/*
 

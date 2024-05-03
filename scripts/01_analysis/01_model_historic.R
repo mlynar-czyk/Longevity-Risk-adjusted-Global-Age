@@ -2,9 +2,9 @@
 # This files runs the analysis for
 # data between the years of 1945 to 2011
 # I included the ability to this on multiple cpu-cores
-# However the default will only use 1-cpu core to aviod complexity
-# (to use multiple cpu-cores change the function in line 58 %do% to %dopar% and set the value
-#  on line 40 in the function registerDoMC to the number of cpus in your machine
+# However the default will only use 1-cpu core to avoid complexity
+# (to use multiple cpu-cores change the function in line 61 %do% to %dopar% and set the value
+#  on line 43 in the function registerDoMC to the number of cpus in your machine
 #  please do not run anything on your computer while its running like this!!)
 #
 # without optimization on multiple-cores expect this script to run for 8 hours
@@ -22,6 +22,9 @@ library(doMC)
 
 # Load Data
 dataset <- read_csv("./data/00_raw/full_qx_data.csv")
+  # Ability to filter by country code e.g. to speed up the process
+  # in low resources environment (uncomment below to use)
+  # %>% filter( (Country %in% c("USA")) )
 
 # Clean up dataset
 dataset %>%

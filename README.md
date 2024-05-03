@@ -39,6 +39,10 @@ For some unknown reason [packrat](https://rstudio.github.io/packrat/) doesn't se
 - Run `renv::snapshot()`
 - Choose `2: Install the packages, then snapshot.`
 
+Be aware that the full historic model processing may not working due to low devcontainer ressources.
+You may need to restart Rstudio server session between the R scripts to free up the memory.
+You have the ability to filter the historic dataset by country code in the R script if needed.
+
 # Get Original Data
 
 After you have cloned the source-code from github, make sure to run `git lfs pull` (see [git-lfs](https://git-lfs.github.com/) for more detail).
